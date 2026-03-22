@@ -1,7 +1,6 @@
 import openpyxl
 
-file_path = 'templates/DATA/Sensor_Data_Full/VC27634_ChestCompression.xlsx'
-wb = openpyxl.load_workbook(file_path, read_only=True)
+wb = openpyxl.load_workbook('templates/DATA/Sensor_Data_Full/VC27634_ChestCompression.xlsx', read_only=True)
 sheet = wb.active
 rows = sheet.iter_rows(values_only=True)
 
